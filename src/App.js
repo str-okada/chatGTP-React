@@ -4,20 +4,29 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <aside className="sidemenu">
+        <div className="sidemenuButton">
+          <span> + </span>
+          New Chat
+        </div>
+      </aside>
+
+      <section className="chatBox">
+        <div className="chatLog">
+          <div className="chatMessage">
+            <div className="avatar">
+              Me
+            </div>
+            <div className="message">
+              Hello World
+            </div>
+          </div>
+        </div>
+
+        <div className="chatInputHolder">
+          <textarea className="chatInputTextarea" placeholder="Type your message here" rows="1"></textarea>
+        </div>
+      </section>
     </div>
   );
 }
