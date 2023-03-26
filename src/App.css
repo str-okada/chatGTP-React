@@ -1,8 +1,7 @@
 .App {
   text-align: center;
   display: flex;
-  /* width: 100%; */
-  background-color: #282c34;
+  background-color: #3b4454;
   color: white;
   position: absolute;
   top: 0;
@@ -10,30 +9,9 @@
   right: 0;
   left: 0;
 }
-
-.sidemenu {
-  width: 240px;
-  padding: 10px;
-  border: 1px solid white;
-  background-color: #424344;
-}
-
 .chatBox {
   flex: 1;
   border: 1px solid white;
-}
-
-.sidemenuButton {
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 5px;
-  text-align: center;
-  transition: ease 0.25s all;
-}
-
-.sidemenuButton:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 1px;
 }
 
 .chatInputHolder {
@@ -42,14 +20,14 @@
 
 .chatInputTextarea {
   background-color: #5c5f63;
-  width: 100%;
+  width: 35%;
   border-radius: 5px;
   border: none;
   color: white;
   font-size: 1.25em;
   /* margin: 12px; */
   outline: none;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5); */
 }
 
 .chatBox {
@@ -128,4 +106,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.file-input {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.submit-button {
+  background-color: #5c5f63;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #464f5b;
 }
